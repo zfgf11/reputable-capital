@@ -8,52 +8,60 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #000;
+            background-color: #000000; /* Darkened background color */
+            color: #fff;
             font-family: Arial, sans-serif;
         }
-        .container {
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #070e15; /* Darkened top bar background color */
+            padding: 10px 20px;
             display: flex;
-            flex-direction: row; /* Changed to row to align items horizontally */
+            justify-content: space-between;
             align-items: center;
-            justify-content: space-between; /* Added to push elements to the sides */
-            height: 100vh;
-            padding: 20px;
+            z-index: 1000;
         }
-        .logo-container {
-            display: flex;
-            align-items: center;
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .logo {
-            margin-right: 20px;
-            max-width: 100px; /* Set max-width for the logos */
+        .capital {
+            color: #FF5842; /* Make "Capital" orange */
         }
         .button-container {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end; /* Align buttons to the right */
+            margin-right: 20px; /* Increased margin-right for spacing */
         }
         .button {
-            padding: 12px 20px;
+            padding: 8px 20px; /* Adjusted button padding */
             border: none;
             border-radius: 25px;
-            background-color: #007bff;
+            background-color: #FF5842; /* Darkened button background color */
             color: #fff;
             text-align: center;
             text-decoration: none;
             transition: background-color 0.3s ease;
             cursor: pointer;
-            margin-bottom: 10px;
+            margin-left: 15px; /* Increased margin-left for spacing */
         }
         .button:last-child {
-            margin-bottom: 0;
+            margin-left: 0;
         }
         .button:hover {
-            background-color: #0056b3;
+            background-color: #000000; /* Darkened button background color on hover */
+        }
+        .container {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #000000; /* Darkened container background color */
         }
         .description {
             text-align: center;
-            color: #666;
+            color: #ccc;
             max-width: 400px;
             margin: 0 auto;
             line-height: 1.6;
@@ -61,18 +69,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="reputable-capital-logo.jpg" alt="Logo 1">
-            </div>
-            <div class="logo">
-                <img src="second-logo.jpg" alt="Logo 2">
-            </div>
-        </div>
+    <div class="top-bar">
+        <div class="logo-text">Reputable <span class="capital">Capital</span></div>
         <div class="button-container">
             <a href="#" class="button">Registrieren</a>
             <a href="anmelden.html" class="button">Anmelden</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="description">
+            <p>Reputable Capital ist eine Handelsplattform...</p>
         </div>
     </div>
 </body>

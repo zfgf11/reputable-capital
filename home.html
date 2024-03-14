@@ -11,18 +11,15 @@
             background-color: #212529; /* Darker background color */
             color: #fff;
             font-family: Arial, sans-serif;
+            position: relative; /* Added position relative for positioning */
         }
         .container {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+            flex-direction: column; /* Changed flex-direction to column */
+            align-items: flex-start; /* Align items to the left */
+            justify-content: flex-start; /* Align items to the top */
             height: 100vh;
             padding: 20px;
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
         }
         .logo-text {
             font-size: 36px;
@@ -33,9 +30,9 @@
             color: orange; /* Make "Capital" orange */
         }
         .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            position: absolute; /* Added position absolute for positioning */
+            top: 20px; /* Positioned from the top */
+            right: 20px; /* Positioned from the right */
         }
         .button {
             padding: 12px 20px;
@@ -47,10 +44,10 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
             cursor: pointer;
-            margin-bottom: 10px;
+            margin-left: 10px; /* Added margin-left for spacing */
         }
         .button:last-child {
-            margin-bottom: 0;
+            margin-left: 0; /* Remove margin-left from the last button */
         }
         .button:hover {
             background-color: #ff8c00; /* Darker orange on hover */
@@ -66,9 +63,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <div class="logo-text">Reputable <span class="capital">Capital</span></div>
-        </div>
+        <div class="logo-text">Reputable <span class="capital">Capital</span></div>
         <div class="button-container">
             <a href="#" class="button">Registrieren</a>
             <a href="anmelden.html" class="button">Anmelden</a>

@@ -17,7 +17,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #070e15; /* Darkened top bar background color */
+            backdrop-filter: blur(0.8);
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -28,9 +28,10 @@
             font-size: 24px;
             font-weight: bold;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
         }
         .capital {
-            color: #FF5842; /* Make "Capital" orange */
+            color: #FF5842;
         }
         .button-container {
             display: flex;
@@ -67,13 +68,16 @@
             line-height: 1.6;
         }
     </style>
+    <style>.trButtonBase[data-v-257338f8]{all:unset;align-items:center;border-radius:1rem;margin-right: 5px;box-sizing:border-box;cursor:pointer;display:flex;display:inline-flex;font-family:Trade Republic Sans Display,sans-serif;font-size:1rem;font-weight:600;gap:1rem;justify-content:space-between;letter-spacing:.0125rem;line-height:150%;padding:1rem;position:relative;transition:all .12s ease-in-out;white-space:nowrap}.trButtonBase[data-v-257338f8]:active{transform:scale(.98)}.trButtonBase.__primary[data-v-257338f8]{min-width:150px}.trButtonBase.__primary-shadow[data-v-257338f8]{box-shadow:0 0 0 0 rgba(0,0,0,.14),0 3px 6px 0 rgba(0,0,0,.14),0 11px 11px 0 rgba(0,0,0,.11),0 24px 15px 0 rgba(0,0,0,.05),0 43px 17px 0 rgba(0,0,0,.02),0 68px 19px 0 transparent}.trButtonBase.__primary.-loading[data-v-257338f8],.trButtonBase.__primary[data-v-257338f8]:disabled{background:#b2b2b2;box-shadow:none}.trButtonBase.__primary-black[data-v-257338f8]{background:#000;color:#fff}.trButtonBase.__primary-white[data-v-257338f8]{background:#fff;color:#000}.trButtonBase.__secondary[data-v-257338f8]{background:transparent;color:#000;gap:.5rem}.trButtonBase.__secondary.-loading[data-v-257338f8],.trButtonBase.__secondary[data-v-257338f8]:disabled{color:#b2b2b2}.trButtonBase.__secondary-black[data-v-257338f8]{color:#000}.trButtonBase.__secondary-white[data-v-257338f8]{color:#fff}.trButtonBase[data-v-257338f8]:not(:disabled):not(.-loading):active{box-shadow:none;transform:scale(.98)}.trButtonBase.-loading[data-v-257338f8],.trButtonBase[data-v-257338f8]:disabled{cursor:not-allowed}.trButtonBase.-inline[data-v-257338f8]{color:inherit;padding:unset}.trButtonBase__icon[data-v-257338f8]{height:1em;width:1em}@media only screen and (min-width:950px){.trButtonBase.-scaling[data-v-257338f8]{font-size:clamp(.875rem,1.26vw,1rem);gap:2.7vw;min-width:unset;padding:clamp(.875rem,1.26vw,1rem)}.trButtonBase.-scaling.__primary[data-v-257338f8]{gap:2.8125rem;min-width:unset}}@media only screen and (min-width:1512px){.trButtonBase.-scaling[data-v-257338f8]{gap:45px}}</style>
+    <style>.returnHome[data-v-f4f843ea]{margin-left:-1rem}.returnHome .__button[data-v-f4f843ea]{gap:.5rem}</style>
+    
 </head>
 <body>
     <div class="top-bar">
         <div class="logo-text">Reputable <span class="capital">Capital</span></div>
         <div class="button-container">
-            <a href="#" class="button">Registrieren</a>
-            <a href="anmelden.html" class="button">Anmelden</a>
+            <button class="trButtonBase __primary __primary-shadow -scaling __primary-white __item -initial" type="button" target="_blank" data-v-7d601c88 data-v-257338f8><!--[--><!--[-->Registrieren<!--]--><!--]--><svg width="16" height="16" fill="none" viewbox="0 0 16 16" class="trButtonBase__icon" data-v-257338f8><path fill="currentColor" fill-rule="evenodd" d="M5.184 4.925a.5.5 0 0 1 0-.707l.864-.864a.5.5 0 0 1 .707 0l4.523 4.523a.5.5 0 0 1 0 .707l-4.523 4.523a.5.5 0 0 1-.707 0l-.864-.865a.5.5 0 0 1 0-.707L8.488 8.23 5.184 4.925Z" clip-rule="evenodd"></path></svg><!----></button>
+            <button class="trButtonBase __primary __primary-shadow -scaling __primary-white __item -initial" type="button" target="_blank" data-v-7d601c88 data-v-257338f8><!--[--><!--[-->Anmelden<!--]--><!--]--><svg width="16" height="16" fill="none" viewbox="0 0 16 16" class="trButtonBase__icon" data-v-257338f8><path fill="currentColor" fill-rule="evenodd" d="M5.184 4.925a.5.5 0 0 1 0-.707l.864-.864a.5.5 0 0 1 .707 0l4.523 4.523a.5.5 0 0 1 0 .707l-4.523 4.523a.5.5 0 0 1-.707 0l-.864-.865a.5.5 0 0 1 0-.707L8.488 8.23 5.184 4.925Z" clip-rule="evenodd"></path></svg><!----></button>
         </div>
     </div>
     <div class="container">

@@ -22,6 +22,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position:relative;
             z-index: 1000;
         }
         .logo-text {
@@ -67,6 +68,34 @@
             margin: 0 auto;
             line-height: 1.6;
         }
+        .rounded-image {
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the image is within the rounded corners */
+     }
+
+    .rounded-image img {
+        width: 200px; /* Adjust the width of the image as needed */
+        height: auto;
+    }
+    </style>
+    <style>
+        .grey-box {
+            background-color: #f2f2f2; /* Grey background color */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            margin-bottom: 20px;
+            position:relative; /* Spacing between boxes */
+        }
+    
+        .box-title {
+            font-weight: bold; /* Bold title */
+            font-size: 20px; /* Title font size */
+            margin-bottom: 10px; /* Spacing between title and text */
+        }
+    
+        .box-text {
+            font-size: 16px; /* Text font size */
+        }
     </style>
     <style>.trButtonBase[data-v-257338f8]{all:unset;align-items:center;border-radius:1rem;margin-right: 5px;box-sizing:border-box;cursor:pointer;display:flex;display:inline-flex;font-family:Trade Republic Sans Display,sans-serif;font-size:1rem;font-weight:600;gap:1rem;justify-content:space-between;letter-spacing:.0125rem;line-height:150%;padding:1rem;position:relative;transition:all .12s ease-in-out;white-space:nowrap}.trButtonBase[data-v-257338f8]:active{transform:scale(.98)}.trButtonBase.__primary[data-v-257338f8]{min-width:150px}.trButtonBase.__primary-shadow[data-v-257338f8]{box-shadow:0 0 0 0 rgba(0,0,0,.14),0 3px 6px 0 rgba(0,0,0,.14),0 11px 11px 0 rgba(0,0,0,.11),0 24px 15px 0 rgba(0,0,0,.05),0 43px 17px 0 rgba(0,0,0,.02),0 68px 19px 0 transparent}.trButtonBase.__primary.-loading[data-v-257338f8],.trButtonBase.__primary[data-v-257338f8]:disabled{background:#b2b2b2;box-shadow:none}.trButtonBase.__primary-black[data-v-257338f8]{background:#000;color:#fff}.trButtonBase.__primary-white[data-v-257338f8]{background:#fff;color:#000}.trButtonBase.__secondary[data-v-257338f8]{background:transparent;color:#000;gap:.5rem}.trButtonBase.__secondary.-loading[data-v-257338f8],.trButtonBase.__secondary[data-v-257338f8]:disabled{color:#b2b2b2}.trButtonBase.__secondary-black[data-v-257338f8]{color:#000}.trButtonBase.__secondary-white[data-v-257338f8]{color:#fff}.trButtonBase[data-v-257338f8]:not(:disabled):not(.-loading):active{box-shadow:none;transform:scale(.98)}.trButtonBase.-loading[data-v-257338f8],.trButtonBase[data-v-257338f8]:disabled{cursor:not-allowed}.trButtonBase.-inline[data-v-257338f8]{color:inherit;padding:unset}.trButtonBase__icon[data-v-257338f8]{height:1em;width:1em}@media only screen and (min-width:950px){.trButtonBase.-scaling[data-v-257338f8]{font-size:clamp(.875rem,1.26vw,1rem);gap:2.7vw;min-width:unset;padding:clamp(.875rem,1.26vw,1rem)}.trButtonBase.-scaling.__primary[data-v-257338f8]{gap:2.8125rem;min-width:unset}}@media only screen and (min-width:1512px){.trButtonBase.-scaling[data-v-257338f8]{gap:45px}}</style>
     <style>.returnHome[data-v-f4f843ea]{margin-left:-1rem}.returnHome .__button[data-v-f4f843ea]{gap:.5rem}</style>
@@ -96,9 +125,13 @@
               </a>
         </div>
     </div>
-    <div class="container">
-        <div class="description">
-            <p>Reputable Capital ist eine Handelsplattform...</p>
+    <div class="content-wrapper">
+        <div class="grey-box">
+            <div class="box-title">Title Here</div>
+            <div class="box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="rounded-image">
+            <img src="/Bilder/geldbaum.jpg" alt="Your Image">
         </div>
     </div>
 </body>
